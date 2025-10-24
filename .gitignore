@@ -1,0 +1,58 @@
+# ========================
+# 🌱 Java / Spring Boot
+# ========================
+target/
+*.class
+*.jar
+*.war
+*.log
+*.tmp
+
+# ========================
+# 💻 IDE Files
+# ========================
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# ========================
+# 🐋 Docker / Compose
+# ========================
+# Docker build cache & volumes
+docker-compose.override.yml
+*.env
+.env.*
+volume-data/
+data/
+logs/
+tmp/
+*.pid
+*.sock
+
+# Specific database volumes
+mysql/
+mysql_data/
+mysql_keycloak_data/
+postgres_data/
+mongo/
+mongodb_data/
+redis_data/
+elasticsearch_data/
+
+# ========================
+# ⚙️ System Files
+# ========================
+.DS_Store
+Thumbs.db
+*.swp
+
+# ========================
+# 🚀 Maven / Gradle wrappers
+# ========================
+mvnw
+mvnw.cmd
+.gradle/
+build/
