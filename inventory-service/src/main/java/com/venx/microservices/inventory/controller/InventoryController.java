@@ -23,5 +23,11 @@ public class InventoryController {
         return inventoryService.isInStock(skuCode, quantity);
     }
 
+    @GetMapping("/all")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Inventory> getInventory() {
+        return inventoryService.findAll();
+    }
+
 
 }
