@@ -22,12 +22,4 @@ public class InventoryController {
     public boolean isInStock(@RequestParam String skuCode, @RequestParam Integer quantity) {
         return inventoryService.isInStock(skuCode, quantity);
     }
-
-    @GetMapping("/all")
-    @ResponseStatus(HttpStatus.OK)
-    public List<Inventory> getInventory() {
-        return inventoryService.findAll();
-    }
-
-
 }
