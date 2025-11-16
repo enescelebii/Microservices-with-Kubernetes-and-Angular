@@ -6,28 +6,30 @@ scrape_configs:
   - job_name: 'api-gateway'
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: [ 'host.docker.internal:9000' ] ## only for demo purposes don't use host.docker.internal in production
+      - targets: ['host.docker.internal:9000']
+        labels:
+          application: api-gateway
   - job_name: 'product-service'
     metrics_path: '/actuator/prometheus'
     static_configs:
       - targets: ['host.docker.internal:8080'] ## only for demo purposes don't use host.docker.internal in production
         labels:
-          service: product-service
+          application: product-service
   - job_name: 'order-service'
     metrics_path: '/actuator/prometheus'
     static_configs:
       - targets: ['host.docker.internal:8081'] ## only for demo purposes don't use host.docker.internal in production
         labels:
-          service: order-service
+          application: order-service
   - job_name: 'inventory-service'
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: [ 'host.docker.internal:8082' ] ## only for demo purposes don't use host.docker.internal in production
+      - targets: ['host.docker.internal:8082'] ## only for demo purposes don't use host.docker.internal in production
         labels:
-          service: inventory-service
+          application: inventory-service
   - job_name: 'notification-service'
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: [ 'host.docker.internal:8083' ] ## only for demo purposes don't use host.docker.internal in production
+      - targets: ['host.docker.internal:8083'] ## only for demo purposes don't use host.docker.internal in production
         labels:
-          service: notification-service
+          application: notification-service

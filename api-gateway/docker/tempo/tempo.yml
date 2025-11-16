@@ -9,4 +9,4 @@ storage:
   trace:
     backend: local
     local:
-      p:ath: /tmp/tempo/blocks
+      path: /tmp/tempo/blocks
