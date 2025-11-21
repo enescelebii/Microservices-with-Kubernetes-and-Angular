@@ -1,7 +1,12 @@
-# 🧩 Microservices with Spring Boot, Docker & Kubernetes Not Complrted
+# 🧩 Microservices with Spring Boot, Docker & Kubernetes
 
 This repository contains a **Spring Boot-based Microservices Architecture** developed as a complete, production-grade project.  
 It demonstrates how to design, build, secure, and deploy cloud-native microservices using **Spring Boot**, **Spring Cloud**, **Docker**, and **Kubernetes**.
+
+## 🧭 Architecture Diagram
+- A visual diagram of microservices communication, Kafka event flow, and observability stack will be added soon.
+<img width="1328" height="672" alt="image" src="https://github.com/user-attachments/assets/2ba97cae-7eb5-46e7-a8ff-2c6accc68a98" />
+<img width="2541" height="1062" alt="image" src="https://github.com/user-attachments/assets/72af3b64-5fdf-4f46-8d2c-a8f6f7cc81a5" />
 
 ---
 
@@ -45,14 +50,7 @@ Each service focuses on its own responsibility, making the system scalable, faul
 - **Full Observability Stack:** Distributed tracing, logging, and metrics with Prometheus and Grafana  
 - **Cloud-Native Deployment:** All services containerized and orchestrated via Kubernetes  
 
-
-## 🧭 Architecture Diagram (coming soon)
-- A visual diagram of microservices communication, Kafka event flow, and observability stack will be added soon.
-
 ## 👤 Author
 - [Tutorial video from Techie](https://programmingtechie.com/)
 - 📧 Enes Çelebi [Linkedin](https://www.linkedin.com/in/enescelebi1/)
 - 💡 Passionate about Microservices, Cloud-Native Development, and Distributed Systems
-
-# 🏁 Project Status
-- 🔴 not Developt yet – Continuous improvements, scalability enhancements, and Kubernetes optimization in progress.
